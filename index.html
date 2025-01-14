@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./Assets/my.jpg" type="image/x-icon" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <link rel="stylesheet" href="aos.css" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="style.css" />
@@ -64,10 +65,12 @@
                   </button>
                 </div>
                 <div class="mt-3">
-                  <a
-                    href="./Assets/Anus Shafiq(FE Dev) (1).pdf"
-                    class="btn py-2 px-3 rounded-pill bg-color text-white"
-                    >Resume</a
+                  <a href="./Assets/Anus Shafiq(FE Dev) (1).pdf"
+                    ><button
+                      class="btn py-2 px-3 rounded-pill bg-color text-white"
+                    >
+                      Resume
+                    </button></a
                   >
                 </div>
               </div>
@@ -408,7 +411,68 @@
               </div>
             </div>
           </div>
-          <!-- tool section start  -->
+          <!-- tool section end  -->
+
+          <!-- form section start  -->
+          <div
+            class="form section mt-5"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            <h1 class="display-1 mb-4 fw-bold">
+              LET'S WORK
+              <br /><span class="bg-text">TOGETHER</span>
+            </h1>
+            <div>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="form-control bg-dark border-0 text-white text-capitalize shadow-none"
+                  id="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email </label>
+                <input
+                  type="email "
+                  class="form-control bg-dark border-0 text-white shadow-none"
+                  id="email"
+                  aria-describedby="emailHelp"
+                  placeholder="Your@emial.com"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message </label>
+                <textarea
+                  id="message"
+                  class="form-control bg-dark text-white border-0 text-capitalize shadow-none"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-light w-100 bg-color border-0 text-white align-items-center d-flex justify-content-center"
+                id="submitBtn"
+              >
+                <span id="btnText">Submit</span>
+                <div
+                  id="spinner"
+                  class="spinner-border text-light d-none"
+                  role="status"
+                  style="height: 24px; width: 24px"
+                >
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- form section end  -->
         </div>
 
         <div
@@ -421,6 +485,8 @@
       </div>
     </div>
 
+    <script type="module" src="config.js"></script>
+    <script type="module" src="form.js"></script>
     <script src="aos.js"></script>
     <script src="bootstrapscript.js"></script>
     <script src="pooper.js"></script>

@@ -5,3 +5,20 @@
 .bg-color {
   background-color: blueviolet;
 }
+
+input:focus {
+  border: 2px solid blueviolet !important;
+}
+
+textarea:focus {
+  border: 2px solid blueviolet !important;
+}
+
+::placeholder {
+  color: #ffffff !important;
+  opacity: 0.5 !important;
+}
+
+button:hover {
+  background-color: rgb(96, 30, 158) !important;
+}
